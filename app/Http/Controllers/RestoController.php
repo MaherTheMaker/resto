@@ -52,7 +52,7 @@ class RestoController extends Controller
         $resto->address=$req->input('address');
         $resto->save();
         $req->session()->flash('stat','Restaurant edited Successfully');
-        return redirect('list');
+        // return redirect('list');
     }
 
 }
